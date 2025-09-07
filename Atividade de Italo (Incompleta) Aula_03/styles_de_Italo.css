@@ -1,0 +1,104 @@
+/* Reset básico melhorado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #111;
+  color: #fff; /* Melhor contraste texto/fundo */
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #0066ee; /* link color definido */
+  transition: color 0.2s;
+}
+a:hover,
+a:focus {
+  color: #0af;
+}
+a:focus {
+  outline: 2px solid #0af; /* Foco visível para acessibilidade */
+}
+
+.conteudo {
+  max-width: 960px;
+  margin: 24px auto;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.skills li {
+  text-transform: capitalize;
+}
+
+.projeto {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+.projeto:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #0066ee;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #0af;
+}
+
+.destaque {
+  outline: 2px dashed orange;
+}
+
+@media screen and (max-width: 600px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    position: sticky;
+    top: -10px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Melhor acessibilidade para foco visível nos links */

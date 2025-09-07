@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio do Joao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Removido o script desnecessário. Adicione se realmente precisar. -->
+  <style>
+    /* Preferível colocar estilos no CSS externo. Exemplo apenas para demonstração. */
+    .btn { background: red !important; color: #fff; }
+  </style>
+</head>
+
+<body class="dark">
+  <header class="header" id="header">
+    <h1>Meu Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#projetos" title="Veja os projetos">Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre mim</h2>
+      <p>Olá! Eu sou <strong>Joao</strong>, desenvolvedor front-end júnior com 2 anos de experiência.</p>
+      <img src="img/minha-foto.png" alt="Foto de Joao">
+      <h3>Minhas habilidades</h3>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="skill">JavaScript</li>
+        <li>Acessibilidade</li>
+      </ul>
+    </section>
+
+    <aside id="contato">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:joao@email.com">joao@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/joao">linkedin.com/in/joao</a></p>
+    </aside>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <article class="projeto" role="article">
+        <h3>App Lista de Tarefas</h3>
+        <p>Um app simples para gerenciar tarefas.</p>
+        <img src="img/todo.jpg" alt="Imagem do App Lista de Tarefas">
+        <a class="btn" href="https://exemplo.com/todo" target="_blank" rel="noopener">Ver projeto</a>
+      </article>
+
+      <article class="projeto destaque" id="projeto-site">
+        <h3>Site Pessoal</h3>
+        <p lang="pt-br">Um site pessoal para estudos.</p>
+        <img src="/images/site-pessoal.webp" alt="Imagem do Site Pessoal">
+        <a class="btn btn--primary" href="https://exemplo.com/site-pessoal" id="ver-site">Ver site</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Joao da Silva</small>
+    <p>Obrigado por visitar!</p>
+    <a href="#header">Topo</a>
+  </footer>
+</body>
+</html>
